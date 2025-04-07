@@ -1,1 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
+.site-header {
+    position: fixed; /* Fix the header at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays above other elements */
+    background-color: #F9F1E7;
+    color: white;
+    padding: 3vh 0;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 5.5vh; 
+    margin-left: 7vh;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.site-header h1 {
+    display: inline-block;
+    margin-left: 10vh;
+    vertical-align: middle;
+}
+
+.sidebar {
+    position: fixed; /* Fix the sidebar to the left */
+    top: 10vh; /* Start below the header */
+    left: 0;
+    width: 20%;
+    height: calc(100vh - 10vh); /* Adjust height to exclude the header */
+    z-index: 999; /* Ensure it stays above the main content */
+    overflow-y: auto; /* Allow scrolling if the sidebar content overflows */
+    background-color: #f3efe9; /* Lighter variant of the header color */
+    color: rgb(0, 0, 0); /* Ensure text color is white */
+    padding: 2vh;
+    box-sizing: border-box;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 2vh 0;
+    font-size: 1.2em;
+}
+
+.sidebar-button {
+    display: block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: #f3efe9; /* Same color as the sidebar */
+    padding: 1vh 2vh;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: left; /* Align text to the left */
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-button:hover {
+    background-color: #e0dcd3; /* Slightly darker variant for hover effect */
+}
+
+.sidebar-button.active {
+    background-color: #d6d1c8; /* Darker variant to indicate the active page */
+}
+
+.account-summary {
+    list-style: none;
+    margin-top: 40px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.account-summary .horizontal-line {
+    border-top: 2px solid #ccc;
+    margin: 15px 0;
+}
+
+.account-summary .account-details h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.account-summary .account-details p {
+    margin: 5px 0 0;
+    font-size: 28px;
+    font-weight: bold;
+}
