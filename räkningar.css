@@ -97,3 +97,199 @@
     font-size: 28px;
     font-weight: bold;
 }
+
+main {
+    margin-left: 20%; /* Matches the width of the sidebar */
+    margin-top: 10vh; /* Matches the height of the header */
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: auto; /* Allow horizontal scrolling if the table is too wide */
+}
+
+.bills-section {
+    padding: 20px;
+    background-color: #ffffff; /* Optional: Add a background color for clarity */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.bills-heading {
+    font-size: 2rem; /* Increase font size */
+    margin-bottom: 10px; /* Adjust spacing below the heading */
+}
+
+.button-container {
+    margin-top: 10px; /* Add spacing between the heading and the button */
+}
+
+.new-bill-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px; /* Rounded button */
+    display: inline-block; /* Ensure the button aligns properly */
+}
+
+.new-bill-button:hover {
+    background-color: #45a049;
+}
+
+.new-bill-form {
+    margin-bottom: 20px;
+    padding: 20px; /* Increased padding for better spacing */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    max-width: 500px; /* Restrict the form width */
+    box-sizing: border-box;
+}
+
+.new-bill-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.new-bill-form input,
+.new-bill-form select {
+    width: 100%; /* Ensure inputs stay within the form */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.new-bill-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.new-bill-form select option {
+    text-transform: capitalize; /* Capitalize the first letter of each word */
+}
+
+new-bill-form button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table td.status {
+    text-align: center;
+    padding: 5px;
+}
+
+table td.status .status-icon {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: default; /* Non-editable */
+}
+
+table td.status .status-icon.check {
+    background-color: #d4edda; /* Light green */
+    color: #155724; /* Dark green text */
+}
+
+table td.status .status-icon.cross {
+    background-color: #f8d7da; /* Light red */
+    color: #721c24; /* Dark red text */
+}
+
+table td .remove-button,
+table td .edit-button {
+    background-color: #F44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 5px; /* Add spacing between buttons */
+}
+
+table td .edit-button {
+    background-color: #4CAF50; /* Green for edit */
+}
+
+table td .remove-button:hover {
+    background-color: #D32F2F;
+}
+
+table td .edit-button:hover {
+    background-color: #45a049;
+}
+
+table tr.edit-row td {
+    text-align: center;
+    padding: 10px;
+    background-color: #f9f9f9; /* Light background for edit row */
+    border-top: 1px solid #ddd;
+}
+
+table td.actions {
+    text-align: center;
+    white-space: nowrap; /* Prevent buttons from wrapping */
+    width: 150px; /* Set a fixed width for the actions column */
+}
+
+table th.actions {
+    width: 150px; /* Set a fixed width for the actions column */
+    text-align: center;
+    white-space: nowrap; /* Prevent content from wrapping */
+}
+
+table td .remove-button,
+table td .edit-button {
+    background-color: #F44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    display: inline-block; /* Ensure buttons are inline */
+    margin: 0 5px; /* Add spacing between buttons */
+}
+
+table td .edit-button {
+    background-color: #4CAF50; /* Green for edit */
+}
+
+table td .remove-button:hover {
+    background-color: #D32F2F;
+}
+
+table td .edit-button:hover {
+    background-color: #45a049;
+}

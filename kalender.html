@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="kalender.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
     <title>Home</title>
+    <script src="kalender.js" defer></script>
 </head>
 <body style="font-family: 'Quicksand', sans-serif;">
     <header class="site-header">
@@ -53,5 +54,26 @@
             </li>
         </ul>
     </aside>
+    <main>
+        <section class="calendar-container">
+            <div class="calendar-header">
+                <button id="prev-month">&lt;</button>
+                <h2 id="current-month">March 2023</h2>
+                <button id="next-month">&gt;</button>
+            </div>
+            <div class="calendar-weekdays">
+                <div>Mån</div>
+                <div>Tis</div>
+                <div>Ons</div>
+                <div>Tor</div>
+                <div>Fre</div>
+                <div>Lör</div>
+                <div>Sön</div>
+            </div>
+            <div class="calendar-grid">
+                <!-- Days will be dynamically generated here -->
+            </div>
+        </section>
+    </main>
 </body>
 </html>

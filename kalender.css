@@ -97,3 +97,100 @@
     font-size: 28px;
     font-weight: bold;
 }
+
+.calendar-container {
+    max-width: 1000px; /* Gör kalendern större */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-weekdays div {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-header button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.calendar-header button:hover {
+    background-color: #45a049;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-grid div {
+    position: relative;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: left;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.calendar-grid div::before {
+    content: attr(data-day); /* Visa siffran för dagen */
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    color: #333;
+}
+
+.calendar-grid div:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.calendar-grid .income {
+    color: green;
+}
+
+.calendar-grid .expense {
+    color: red;
+}
+
+.calendar-grid .empty {
+    background-color: transparent;
+    border: none;
+    cursor: default;
+}
+
+main {
+    margin-left: 20%; /* Lämna utrymme för sidofältet */
+    margin-top: 10vh; /* Lämna utrymme för sidhuvudet */
+    padding: 20px;
+    box-sizing: border-box;
+}

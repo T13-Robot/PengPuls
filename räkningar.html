@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
-    <title>Home</title>
+    <link rel="stylesheet" href="räkningar.css">
+    <title>Räkningar</title>
+    <script src="räkningar.js" defer></script>
 </head>
 <body style="font-family: 'Quicksand', sans-serif;">
     <header class="site-header">
@@ -53,5 +55,58 @@
             </li>
         </ul>
     </aside>
+    <main>
+        <section class="bills-section">
+            <h1 class="bills-heading">Räkningar</h1>
+            <div class="button-container">
+                <button class="new-bill-button">+ Ny Räkning</button>
+            </div>
+            <form class="new-bill-form" style="display: none;">
+                <label for="bill-name">Namn:</label>
+                <input type="text" id="bill-name" name="bill-name" required>
+                
+                <label for="bill-type">Typ:</label>
+                <select id="bill-type" name="bill-type" required>
+                    <option value="engångs">Engångsräkning</option>
+                    <option value="månatlig">Varje månad</option>
+                </select>
+                
+                <label for="bill-amount">Belopp:</label>
+                <input type="number" id="bill-amount" name="bill-amount" required>
+                
+                <label for="bill-due-date">Förfallodatum:</label>
+                <input type="date" id="bill-due-date" name="bill-due-date" required>
+                
+                <button type="submit">Lägg till</button>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Typ</th>
+                        <th>Namn</th>
+                        <th>Förfallodatum</th>
+                        <th>Belopp</th>
+                        <th>Pågående</th> <!-- Updated header -->
+                        <th class="actions">Åtgärder</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example row -->
+                    <tr>
+                        <td>Engångsräkning</td>
+                        <td>Elräkning</td>
+                        <td>2023-11-14</td>
+                        <td>2,011 Kr</td>
+                        <td>✔</td>
+                        <td class="actions">
+                            <button class="edit-button">Pågående</button>
+                            <button class="remove-button">Ta bort</button>
+                        </td>
+                    </tr>
+                    <!-- Rows will be dynamically added here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
 </body>
 </html>
