@@ -97,3 +97,87 @@
     font-size: 28px;
     font-weight: bold;
 }
+
+.transactions-section {
+    padding: 20px;
+}
+
+.transactions-section h1 {
+    font-size: 2em; /* Increase the font size of the heading */
+    margin-bottom: 20px; /* Add spacing below the heading */
+}
+
+.transactions-controls {
+    margin-bottom: 10px;
+}
+
+.transactions-controls button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.transactions-controls button#add-expense {
+    background-color: #f44336;
+}
+
+.transactions-table {
+    margin-top: 20px; /* Add spacing between controls and the table */
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transactions-table th, .transactions-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.transactions-table th {
+    background-color: #f2f2f2;
+    font-weight: 600;
+}
+
+.transactions-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.transactions-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.transactions-table .delete-btn {
+    color: #f44336;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    background: none;
+}
+
+.main-content {
+    margin-left: 22%; /* Ensure content starts after the sidebar */
+    margin-top: 12vh; /* Ensure content starts below the header */
+    padding: 20px;
+}
+
+.tag-button {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+    background-color: #e8f5e9; /* Default light green for income */
+    border: none;
+    cursor: default;
+}
+
+.tag-button.expense {
+    background-color: #fdecea; /* Light red for expense */
+}

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="transaktioner.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
-    <title>Home</title>
+    <title>Hem</title>
+    <script src="transaktioner.js" defer></script>
 </head>
 <body style="font-family: 'Quicksand', sans-serif;">
     <header class="site-header">
@@ -53,5 +54,29 @@
             </li>
         </ul>
     </aside>
+    <main class="main-content">
+        <section class="transactions-section">
+            <h1>Transaktioner</h1>
+            <div class="transactions-controls">
+                <button id="add-income">+ Lägg till inkomst</button>
+                <button id="add-expense">- Lägg till utgift</button>
+            </div>
+            <table class="transactions-table">
+                <thead>
+                    <tr>
+                        <th>Datum</th>
+                        <th>Belopp</th>
+                        <th>Konto</th>
+                        <th>Mottagare</th>
+                        <th>Tagg</th>
+                        <th>Åtgärder</th>
+                    </tr>
+                </thead>
+                <tbody id="transactions-body">
+
+                </tbody>
+            </table>
+        </section>
+    </main>
 </body>
 </html>
