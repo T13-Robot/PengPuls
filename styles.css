@@ -9,7 +9,7 @@
     left: 0;
     width: 100%;
     z-index: 1000; /* Ensure it stays above other elements */
-    background-color: #F9F1E7;
+    background-color: #e7d989;
     color: white;
     padding: 3vh 0;
     display: flex;
@@ -39,7 +39,7 @@
     height: calc(100vh - 10vh); /* Adjust height to exclude the header */
     z-index: 999; /* Ensure it stays above the main content */
     overflow-y: auto; /* Allow scrolling if the sidebar content overflows */
-    background-color: #f3efe9; /* Lighter variant of the header color */
+    background-color: #e7dda5; /* Lighter variant of the header color */
     color: rgb(0, 0, 0); /* Ensure text color is white */
     padding: 2vh;
     box-sizing: border-box;
@@ -59,7 +59,7 @@
     display: block;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    background-color: #f3efe9; /* Same color as the sidebar */
+    background-color: #e7dda5; /* Match the sidebar color */
     padding: 1vh 2vh;
     border-radius: 5px;
     font-size: 1.2em;
@@ -68,11 +68,11 @@
 }
 
 .sidebar-button:hover {
-    background-color: #e0dcd3; /* Slightly darker variant for hover effect */
+    background-color: #d6d1c8; /* Slightly darker variant for hover effect */
 }
 
 .sidebar-button.active {
-    background-color: #d6d1c8; /* Darker variant to indicate the active page */
+    background-color: #d9cea8; /* Slightly more yellowish variant to indicate the active page */
 }
 
 .account-summary {
@@ -83,7 +83,7 @@
 }
 
 .account-summary .horizontal-line {
-    border-top: 2px solid #ccc;
+    border-top: 2px solid #000000;
     margin: 15px 0;
 }
 
